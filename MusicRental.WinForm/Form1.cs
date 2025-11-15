@@ -1,4 +1,4 @@
-namespace MusicRental.Winforms
+namespace MusicRental.WinForm
 {
     public partial class Form1 : Form
     {
