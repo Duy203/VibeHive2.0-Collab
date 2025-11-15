@@ -22,7 +22,7 @@ namespace MusicRental.Winforms.Services
             _client = new HttpClient();
         }
 
-        private StringContent ToJSON (object obj)
+        private StringContent ToJSON(object obj)
         {
             string json = JsonConvert.SerializeObject(obj);
             return new StringContent(json, Encoding.UTF8, "application/json");
@@ -61,7 +61,7 @@ namespace MusicRental.Winforms.Services
 
         public async Task<bool> ReturnAlbum(int rentalId)
         {
-            var response = await _client.PostAsync($"{BASE_URL}/api/rentals/{rentalId}/return",null);
+            var response = await _client.PostAsync($"{BASE_URL}/api/rentals/{rentalId}/return", null);
             return response.IsSuccessStatusCode;
         }
 

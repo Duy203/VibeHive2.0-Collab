@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MusicRental.API\MusicRental.API.csproj" />
+    <ProjectReference Include="..\VibeHive.Common\VibeHive.Common.csproj" />
+    <ProjectReference Include="..\VibeHive.Core\VibeHive.Core.csproj" />
+  </ItemGroup>
+
+</Project>
