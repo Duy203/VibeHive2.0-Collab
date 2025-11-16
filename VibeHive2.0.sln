@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -16,6 +16,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicRental.API", "MusicRental.API\MusicRental.API.csproj", "{A7896387-886C-4BE0-AEBC-3DCCCABACF43}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicRental.WinForm", "MusicRental.WinForm\MusicRental.WinForm.csproj", "{6BD302FB-DB82-4091-AAFD-D26D7035F9E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaylistBuilder.API", "PlaylistBuilder.API\PlaylistBuilder.API.csproj", "{CC21F510-9D90-4D39-95B6-D281BB3833A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaylistBuilder.WinForms", "PlaylistBuilder.WinForms\PlaylistBuilder.WinForms.csproj", "{A3EA4981-5203-476A-8D54-3533D57BC00A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagement.API", "EventManagement.API\EventManagement.API.csproj", "{00E48D4B-1852-42EE-B5AF-625DD9E95F38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{6BD302FB-DB82-4091-AAFD-D26D7035F9E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BD302FB-DB82-4091-AAFD-D26D7035F9E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BD302FB-DB82-4091-AAFD-D26D7035F9E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC21F510-9D90-4D39-95B6-D281BB3833A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC21F510-9D90-4D39-95B6-D281BB3833A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC21F510-9D90-4D39-95B6-D281BB3833A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC21F510-9D90-4D39-95B6-D281BB3833A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3EA4981-5203-476A-8D54-3533D57BC00A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3EA4981-5203-476A-8D54-3533D57BC00A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3EA4981-5203-476A-8D54-3533D57BC00A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3EA4981-5203-476A-8D54-3533D57BC00A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00E48D4B-1852-42EE-B5AF-625DD9E95F38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00E48D4B-1852-42EE-B5AF-625DD9E95F38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00E48D4B-1852-42EE-B5AF-625DD9E95F38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00E48D4B-1852-42EE-B5AF-625DD9E95F38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +66,9 @@ Global
 		{3B00BBF9-7175-41CB-8665-010D685E01EA} = {F00C1F5F-FF23-4537-8312-C3B5E7B2FCC8}
 		{A7896387-886C-4BE0-AEBC-3DCCCABACF43} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{6BD302FB-DB82-4091-AAFD-D26D7035F9E8} = {CD3E14E7-BE96-473E-9CFF-A44E7B3A0815}
+		{CC21F510-9D90-4D39-95B6-D281BB3833A6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{A3EA4981-5203-476A-8D54-3533D57BC00A} = {CD3E14E7-BE96-473E-9CFF-A44E7B3A0815}
+		{00E48D4B-1852-42EE-B5AF-625DD9E95F38} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1561A912-24CC-406D-B4F8-B1FA65899D8E}

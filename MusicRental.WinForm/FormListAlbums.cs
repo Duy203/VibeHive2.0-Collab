@@ -31,7 +31,7 @@ namespace MusicRental.WinForm
             dgv_album.DataSource = await _api.GetAllMusic();
         }
 
-        private async Task btn_delete_Click(object sender, EventArgs e)
+        private async void btn_delete_Click(object sender, EventArgs e)
         {
             if (dgv_album.CurrentRow == null) return;
             
