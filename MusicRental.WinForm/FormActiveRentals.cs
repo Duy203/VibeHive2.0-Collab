@@ -7,14 +7,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MusicRental.Winforms.Services;
+using VibeHive.Common.DTOs;
 
 namespace MusicRental.WinForm
 {
     public partial class FormActiveRentals : Form
     {
+        private readonly APIClient _api;    
         public FormActiveRentals()
         {
             InitializeComponent();
+            _api = new APIClient();
+        }
+
+        private async void FormActiveRentals_Load(object sender, EventArgs e)
+        {
+            dgv_rentals.DataSource = await _api.GetActiveRentals();
+        }
+
+        private async void button1_Click(object sender, EventArgs e)
+        {
+            dgv_rentals.DataSource = await _api.GetActiveRentals();
         }
     }
 }

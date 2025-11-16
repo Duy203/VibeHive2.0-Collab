@@ -1,6 +1,6 @@
-﻿namespace MusicRental.WinForm
+﻿namespace PlaylistBuilder.WinForms
 {
-    partial class FormRentAlbum
+    partial class FormVoteSong
     {
         /// <summary>
         /// Required designer variable.
@@ -28,77 +28,77 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txt_bx_userid = new TextBox();
-            txt_bx_albumid = new TextBox();
+            txt_bx_playlistid = new TextBox();
+            txt_bx_songid = new TextBox();
             label1 = new Label();
             label2 = new Label();
-            btn_rent_album = new Button();
+            btn_vote = new Button();
             SuspendLayout();
             // 
-            // txt_bx_userid
+            // txt_bx_playlistid
             // 
-            txt_bx_userid.Location = new Point(225, 45);
-            txt_bx_userid.Name = "txt_bx_userid";
-            txt_bx_userid.Size = new Size(200, 39);
-            txt_bx_userid.TabIndex = 0;
+            txt_bx_playlistid.Location = new Point(467, 107);
+            txt_bx_playlistid.Name = "txt_bx_playlistid";
+            txt_bx_playlistid.Size = new Size(200, 39);
+            txt_bx_playlistid.TabIndex = 0;
             // 
-            // txt_bx_albumid
+            // txt_bx_songid
             // 
-            txt_bx_albumid.Location = new Point(225, 143);
-            txt_bx_albumid.Name = "txt_bx_albumid";
-            txt_bx_albumid.Size = new Size(200, 39);
-            txt_bx_albumid.TabIndex = 1;
+            txt_bx_songid.Location = new Point(467, 200);
+            txt_bx_songid.Name = "txt_bx_songid";
+            txt_bx_songid.Size = new Size(200, 39);
+            txt_bx_songid.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(103, 48);
+            label1.Location = new Point(312, 110);
             label1.Name = "label1";
-            label1.Size = new Size(91, 32);
+            label1.Size = new Size(122, 32);
             label1.TabIndex = 2;
-            label1.Text = "User ID";
+            label1.Text = "PLaylist ID";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(103, 150);
+            label2.Location = new Point(312, 200);
             label2.Name = "label2";
-            label2.Size = new Size(114, 32);
+            label2.Size = new Size(99, 32);
             label2.TabIndex = 3;
-            label2.Text = "Album ID";
+            label2.Text = "Song ID";
             // 
-            // btn_rent_album
+            // btn_vote
             // 
-            btn_rent_album.Location = new Point(225, 234);
-            btn_rent_album.Name = "btn_rent_album";
-            btn_rent_album.Size = new Size(150, 46);
-            btn_rent_album.TabIndex = 4;
-            btn_rent_album.Text = "Rent Album";
-            btn_rent_album.UseVisualStyleBackColor = true;
-            btn_rent_album.Click += btn_rent_album_Click;
+            btn_vote.Location = new Point(486, 287);
+            btn_vote.Name = "btn_vote";
+            btn_vote.Size = new Size(150, 46);
+            btn_vote.TabIndex = 4;
+            btn_vote.Text = "Vote";
+            btn_vote.UseVisualStyleBackColor = true;
+            btn_vote.Click += btn_vote_Click;
             // 
-            // FormRentAlbum
+            // FormVoteSong
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1228, 563);
-            Controls.Add(btn_rent_album);
+            ClientSize = new Size(1771, 667);
+            Controls.Add(btn_vote);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(txt_bx_albumid);
-            Controls.Add(txt_bx_userid);
-            Name = "FormRentAlbum";
-            Text = "FormRentAlbum";
+            Controls.Add(txt_bx_songid);
+            Controls.Add(txt_bx_playlistid);
+            Name = "FormVoteSong";
+            Text = "FormVoteSong";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private TextBox txt_bx_userid;
-        private TextBox txt_bx_albumid;
+        private TextBox txt_bx_playlistid;
+        private TextBox txt_bx_songid;
         private Label label1;
         private Label label2;
-        private Button btn_rent_album;
+        private Button btn_vote;
     }
 }

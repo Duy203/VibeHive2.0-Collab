@@ -1,6 +1,6 @@
-﻿namespace MusicRental.WinForm
+﻿namespace PlaylistBuilder.WinForms
 {
-    partial class FormActiveRentals
+    partial class FormViewPlaylist
     {
         /// <summary>
         /// Required designer variable.
@@ -28,46 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dgv_rentals = new DataGridView();
+            dataGridView1 = new DataGridView();
             button1 = new Button();
-            ((System.ComponentModel.ISupportInitialize)dgv_rentals).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // dgv_rentals
+            // dataGridView1
             // 
-            dgv_rentals.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv_rentals.Location = new Point(204, 39);
-            dgv_rentals.Name = "dgv_rentals";
-            dgv_rentals.RowHeadersWidth = 82;
-            dgv_rentals.Size = new Size(548, 300);
-            dgv_rentals.TabIndex = 0;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(301, 44);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 82;
+            dataGridView1.Size = new Size(666, 300);
+            dataGridView1.TabIndex = 0;
             // 
             // button1
             // 
-            button1.Location = new Point(349, 372);
+            button1.Location = new Point(508, 424);
             button1.Name = "button1";
-            button1.Size = new Size(259, 71);
+            button1.Size = new Size(261, 60);
             button1.TabIndex = 1;
-            button1.Text = "Refresh";
+            button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // FormActiveRentals
+            // FormViewPlaylist
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1163, 663);
+            ClientSize = new Size(1355, 639);
             Controls.Add(button1);
-            Controls.Add(dgv_rentals);
-            Name = "FormActiveRentals";
-            Text = "FormActiveRentals";
-            ((System.ComponentModel.ISupportInitialize)dgv_rentals).EndInit();
+            Controls.Add(dataGridView1);
+            Name = "FormViewPlaylist";
+            Text = "FormViewPlaylist";
+            Load += FormViewPlaylist_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private DataGridView dgv_rentals;
+        private DataGridView dataGridView1;
         private Button button1;
     }
 }
