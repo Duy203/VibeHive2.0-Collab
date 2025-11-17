@@ -1,0 +1,68 @@
+syntax = "proto3";
+
+option csharp_namespace = "AlbumInventoryAPI";
+
+package inventory;
+
+service InventoryService
+{
+	rpc AddAlbum (AddAlbumRequest) returns (AddAlbumResponse);
+	rpc GetAlbum (GetAlbumRequest) returns (GetAlbumResponse);
+	rpc UpdateAlbum (UpdateAlbumRequest) returns (UpdateAlbumResponse);
+	rpc DeleteAlbum (DeleteAlbumRequest) returns (DeleteAlbumResponse);
+	rpc ListAlbum (ListAlbumRequest) returns (ListAlbumResponse);
+}
+
+message AddAlbumRequest{
+	string albumName = 1;
+	string artist = 2;
+	int32 year = 3;
+}
+
+message AddAlbumResponse{
+	string albumId = 1;
+}
+
+message GetAlbumRequest{
+	string albumId = 1;
+}
+
+message GetAlbumResponse{
+	string albumId = 1;
+	string albumName = 2;
+	string artist = 3;
+	int32 year = 4;
+}
+
+message UpdateAlbumRequest{
+	string albumId = 1;
+	string albumName = 2;
+	string artist = 3;
+	int32 year = 4;
+}
+
+message UpdateAlbumResponse{
+	string albumId = 1;
+	string albumName = 2;
+	string artist = 3;
+	int32 year = 4;
+}
+
+message DeleteAlbumRequest{
+	string albumId = 1;
+}
+
+message DeleteAlbumResponse{
+	string albumId = 1;
+}
+
+message ListAlbumRequest{
+	string albumId = 1;
+}
+
+message ListAlbumResponse{
+	string albumId = 1;
+	string albumName = 2;
+	string artist = 3;
+	int32 year = 4;
+}
